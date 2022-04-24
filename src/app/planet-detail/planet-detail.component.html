@@ -1,0 +1,14 @@
+<div class="planet-item">
+  <div class="planet-item__wrapper">
+    <h1>{{planetName}}</h1>
+    <img class="planet-item__image" src="../../assets/planets-img/{{planetName}}.jpg" alt="{{planet.name}} picture">
+  <app-benefits-list [planet]="planet"></app-benefits-list>
+  </div>
+  <div class="resident-list__wrapper">
+    <app-filter></app-filter>
+    <app-residents-list [pipeValue]="pipeValue" [residentsUrl]="residentsUrl"></app-residents-list>
+</div>
+</div>
+<nav>
+  <a class="back-button" routerLink="/planets">Go to full list</a>
+</nav>

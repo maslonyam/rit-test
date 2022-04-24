@@ -1,0 +1,12 @@
+.body-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/background.jpg');
+  background-size: contain;
+}
+
+h1 {
+  width: fit-content;
+  padding-top: 30px;
+  margin: 0 auto;
+}

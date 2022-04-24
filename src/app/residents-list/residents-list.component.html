@@ -1,0 +1,14 @@
+<ul class="residents-list">
+  <li *ngFor="let resident of (residents | filterPipe:pipeValue)" class="residents-list__item">
+    <div class="resident-image__wrapper">
+      <h2>{{ resident.name }}</h2>
+      <img class="resident__image" src="../../assets/residents-img/{{resident.name}}.jpg" alt="{{resident.name}} picture">
+    </div>
+    <ul class="resident__benefits benefits">
+      <li class="benefits-item"><span class="benefits-item__indicator indicator">Birth Year: </span><span class="benefits-item__value value">{{ resident.birth_year }}</span></li>
+      <li class="benefits-item"><span class="benefits-item__indicator indicator">Height: </span><span class="benefits-item__value value">{{ resident.height }}</span></li>
+      <li class="benefits-item"><span class="benefits-item__indicator indicator">Weight: </span><span class="benefits-item__value value">{{ resident.mass }}</span></li>
+      <li class="benefits-item"><span class="benefits-item__indicator indicator">Gender: </span><span class="benefits-item__value value">{{ resident.gender }}</span></li>
+    </ul>
+  </li>
+</ul>

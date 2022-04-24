@@ -1,0 +1,50 @@
+.list {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  width: 1000px;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.list-item {
+  background-color: grba(0, 0, 0, 1);
+  &__link {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0085FF;
+    backdrop-filter: blur(5px);
+
+    &:hover {
+      box-shadow: 0px 0px 5px #FF0000;
+    }
+
+    &:hover .list-item__image {
+      box-shadow: 0px 0px 20px #FF0000;
+    }
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #0085FF;
+  } 
+}
+
+.planet-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}

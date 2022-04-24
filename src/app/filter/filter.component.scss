@@ -1,0 +1,24 @@
+form {
+  display: flex;
+  gap: 20px;
+
+  input {
+    position: absolute;
+    opacity: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:checked ~ span {
+      background-color: transparent;
+      text-shadow: 1px 1px 5px #FF0000, 1px 1px 5px #FF0000, 1px 1px 5px #FF0000;
+    }
+  }
+
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

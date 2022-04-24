@@ -1,0 +1,73 @@
+.planet-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 20px;
+  h1 {
+    font-size: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  &__image {
+    position: relative;
+    z-index: 100;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ffffff;
+    animation: 10s linear infinite reverse running rotateImg;
+  }
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+app-benefits-list {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+
+.resident-list__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 700px;
+  padding: 20px 20px 0 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  margin-top: 20px;
+}
+.back-button {
+  box-sizing: border-box;
+  width: fit-content;
+  height: 40px;
+  padding: 10px;
+  margin-left: 300px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px #FF0000;
+
+  &:hover {
+    box-shadow: 0 0 20px #0085FF;
+  }
+}

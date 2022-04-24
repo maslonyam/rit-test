@@ -1,0 +1,39 @@
+.residents-list {
+  overflow-y: scroll;
+  width: 700px;
+  height: 70vh;
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+  }
+}
+
+.resident {
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.resident-image__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
+
+.benefits {
+  &-item {
+    width: 350px;
+  }
+}
