@@ -2,7 +2,7 @@
   <li *ngFor="let planet of planets" class="list__item list-item">
    <a routerLink="/planets/{{planet.name}}" class="list-item__link link">
      <div class="planet-wrapper">
-      <img src="../assets/planets-img/{{planet.name}}.jpg" alt="{{planet.name}} picture" class="list-item__image">
+      <img src="/src/assets/planets-img/{{planet.name}}.jpg" alt="{{planet.name}} picture" class="list-item__image">
       <h2 class="list-item__header">{{ planet.name }}</h2>
     </div>
      <app-benefits-list [planet]="planet"></app-benefits-list>
